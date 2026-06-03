@@ -112,7 +112,6 @@ h1,h2,h3,h4{font-family:'DM Serif Display',serif;font-weight:400}
 .badge-blue{background:var(--blue-bg);color:var(--blue)}
 .badge-muted{background:var(--surface2);color:var(--muted)}
 
-/* FORM PAGE */
 .form-page{max-width:640px}
 .form-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px;margin-bottom:16px}
 .form-card-title{font-size:18px;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--border)}
@@ -123,7 +122,6 @@ h1,h2,h3,h4{font-family:'DM Serif Display',serif;font-weight:400}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .form-hint{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.5}
 
-/* MONTH PICKER */
 .months-toggle{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-bottom:8px}
 .mt-btn{padding:8px 4px;border-radius:8px;border:1px solid var(--border2);background:var(--surface2);color:var(--muted);font-size:12px;font-weight:500;text-align:center;cursor:pointer;transition:all 0.15s;font-family:'DM Sans'}
 .mt-btn:hover{border-color:var(--accent);color:var(--accent2)}
@@ -131,7 +129,6 @@ h1,h2,h3,h4{font-family:'DM Serif Display',serif;font-weight:400}
 .mt-shortcuts{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap}
 .mp-year-label{font-size:13px;font-weight:600;color:var(--accent2);margin-bottom:8px;display:block}
 
-/* DIVIDAS */
 .divida-card{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);padding:18px;margin-bottom:10px}
 .divida-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
 .divida-name{font-size:15px;font-weight:600}
@@ -145,7 +142,6 @@ h1,h2,h3,h4{font-family:'DM Serif Display',serif;font-weight:400}
 .parc-btn.cur{border-color:rgba(124,106,247,0.5);color:var(--accent2)}
 .parc-btn.done{background:var(--green-bg);border-color:var(--green);color:var(--green)}
 
-/* CHART */
 .bar-chart{display:flex;align-items:flex-end;gap:8px;height:110px;padding-top:8px}
 .bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px}
 .bar-wrap{width:100%;display:flex;flex-direction:column;justify-content:flex-end;flex:1}
@@ -154,9 +150,9 @@ h1,h2,h3,h4{font-family:'DM Serif Display',serif;font-weight:400}
 .progress-row{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:4px}
 .progress-bar{background:var(--surface3);border-radius:4px;height:7px;margin-bottom:12px;overflow:hidden}
 
-/* SETUP / CONFIG */
+/* ── SETUP ── */
 .setup-wrap{min-height:80vh;display:flex;align-items:center;justify-content:center;padding:20px}
-.setup-card{background:var(--surface);border:1px solid var(--border2);border-radius:20px;padding:40px;max-width:520px;width:100%}
+.setup-card{background:var(--surface);border:1px solid var(--border2);border-radius:20px;padding:40px;max-width:540px;width:100%}
 .setup-icon{font-size:40px;margin-bottom:16px}
 .setup-title{font-size:28px;margin-bottom:8px}
 .setup-sub{color:var(--muted);font-size:14px;line-height:1.7;margin-bottom:28px}
@@ -171,12 +167,10 @@ h1,h2,h3,h4{font-family:'DM Serif Display',serif;font-weight:400}
 .config-bar{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);cursor:pointer;padding:5px 8px;border-radius:var(--radius-sm);transition:all 0.15s}
 .config-bar:hover{background:var(--surface2);color:var(--text)}
 
-/* TOAST */
 .toast{position:fixed;bottom:24px;right:24px;background:var(--surface2);border:1px solid var(--border2);color:var(--text);padding:11px 18px;border-radius:var(--radius);font-size:13px;z-index:999;box-shadow:0 8px 32px rgba(0,0,0,0.4);animation:slideIn 0.2s ease;max-width:320px}
 .toast.err{border-color:var(--red);color:var(--red)}
 @keyframes slideIn{from{transform:translateY(12px);opacity:0}to{transform:translateY(0);opacity:1}}
 
-/* LOADING */
 .loading-screen{position:fixed;inset:0;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;z-index:500}
 .loading-spinner{width:36px;height:36px;border:3px solid var(--surface2);border-top-color:var(--accent);border-radius:50%;animation:spin 0.8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
@@ -186,6 +180,9 @@ h1,h2,h3,h4{font-family:'DM Serif Display',serif;font-weight:400}
 .modal{background:var(--surface);border:1px solid var(--border2);border-radius:16px;padding:28px;width:100%;max-width:460px}
 .modal h3{font-size:22px;margin-bottom:20px}
 .modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:24px}
+
+/* badge gist */
+.gist-badge{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--green);background:var(--green-bg);padding:3px 9px;border-radius:20px;margin-left:8px}
 
 .hidden{display:none!important}
 select option{background:var(--surface2)}
@@ -209,13 +206,13 @@ select option{background:var(--surface2)}
   <div class="loading-text" id="loadingText">Conectando ao GitHub…</div>
 </div>
 
-<!-- SETUP (primeira vez) -->
+<!-- SETUP -->
 <div id="setupScreen" class="hidden">
   <div class="setup-wrap">
     <div class="setup-card">
       <div class="setup-icon">🔐</div>
       <h2 class="setup-title">Configurar sincronização</h2>
-      <p class="setup-sub">Seus dados serão salvos em um arquivo <code>financas.json</code> no seu repositório do GitHub — acessível de qualquer dispositivo, com histórico automático de versões.</p>
+      <p class="setup-sub">Seus dados serão salvos em um <strong style="color:var(--green)">Gist Secreto</strong> no GitHub — completamente privado, acessível de qualquer dispositivo, com histórico automático de versões.</p>
 
       <div class="setup-steps">
         <div class="setup-step">
@@ -224,26 +221,23 @@ select option{background:var(--surface2)}
         </div>
         <div class="setup-step">
           <div class="step-num">2</div>
-          <div class="step-text">Em <strong>Repository access</strong>, selecione <em>Only select repositories</em> e escolha o repositório onde o app está hospedado. Em <strong>Permissions → Contents</strong>, escolha <code>Read and write</code>.</div>
+          <div class="step-text">Em <strong>Repository access</strong>, deixe em <code>Public Repositories (read-only)</code>. Em <strong>Account permissions → Gists</strong>, selecione <code>Read and write</code>. <strong>Não precisa selecionar nenhum repositório.</strong></div>
         </div>
         <div class="setup-step">
           <div class="step-num">3</div>
-          <div class="step-text">Gere o token, copie e cole abaixo. Ele fica salvo só neste dispositivo (localStorage) e nunca é enviado a nenhum servidor além do próprio GitHub.</div>
+          <div class="step-text">Gere o token, copie e cole abaixo. Na primeira vez, o app criará automaticamente um Gist Secreto para salvar seus dados.</div>
         </div>
       </div>
 
       <div class="form-group">
-        <label class="form-label">Usuário do GitHub</label>
-        <input class="form-input" id="cfg-user" placeholder="seu-usuario">
-      </div>
-      <div class="form-group">
-        <label class="form-label">Nome do repositório</label>
-        <input class="form-input" id="cfg-repo" placeholder="financas-pessoais">
-      </div>
-      <div class="form-group">
         <label class="form-label">Personal Access Token</label>
         <input class="form-input" id="cfg-token" type="password" placeholder="github_pat_…">
-        <div class="form-hint">O token fica salvo apenas neste navegador (localStorage). Os dados financeiros ficam no GitHub.</div>
+        <div class="form-hint">🔒 O token fica salvo <strong>apenas neste navegador</strong>. Seus dados financeiros ficam num Gist Secreto — invisível publicamente.</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">ID do Gist (opcional — se já tiver um)</label>
+        <input class="form-input" id="cfg-gist" placeholder="Deixe em branco para criar automaticamente">
+        <div class="form-hint">Se já configurou em outro dispositivo, cole aqui o ID do Gist existente.</div>
       </div>
       <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:8px">
         <button class="btn btn-accent" onclick="salvarConfig()">Conectar e continuar →</button>
@@ -459,24 +453,21 @@ select option{background:var(--surface2)}
     </div>
   </div>
 
-</div><!-- /main -->
-</div><!-- /appShell -->
+</div>
+</div>
 
 <!-- MODAL CONFIG -->
 <div id="modal-config" class="modal-overlay hidden">
   <div class="modal">
     <h3>Configurações</h3>
     <div class="form-group">
-      <label class="form-label">Usuário GitHub</label>
-      <input class="form-input" id="edit-user">
+      <label class="form-label">Token GitHub</label>
+      <input class="form-input" id="edit-token" type="password" placeholder="Deixe em branco para manter o atual">
     </div>
     <div class="form-group">
-      <label class="form-label">Repositório</label>
-      <input class="form-input" id="edit-repo">
-    </div>
-    <div class="form-group">
-      <label class="form-label">Token (deixe em branco para manter o atual)</label>
-      <input class="form-input" id="edit-token" type="password" placeholder="github_pat_…">
+      <label class="form-label">ID do Gist</label>
+      <input class="form-input" id="edit-gist" placeholder="ID do gist (gerado automaticamente)">
+      <div class="form-hint">Copie este ID para configurar em outro dispositivo.</div>
     </div>
     <div id="edit-error" style="color:var(--red);font-size:13px;margin-top:8px;display:none"></div>
     <div class="modal-actions">
@@ -496,48 +487,49 @@ let currentYear=new Date().getFullYear(), currentMonth=new Date().getMonth();
 let currentTab='entradas', currentPage='overview';
 let lancTipo='entrada', mpSelected={}, divParcelasData=[], editingLancId=null;
 let appData={_lancamentos:[],_dividas:[],_pagamentos:{}};
-let ghFileSha=null; // SHA do arquivo no GitHub para updates
 
 // ═══════════════════════════════════════════════
 // CONFIG (localStorage — só credenciais)
 // ═══════════════════════════════════════════════
-function getCfg(){ try{ return JSON.parse(localStorage.getItem('fin_cfg'))||{} }catch{ return{} } }
-function setCfg(c){ localStorage.setItem('fin_cfg', JSON.stringify(c)) }
+function getCfg(){ try{ return JSON.parse(localStorage.getItem('fin_cfg_gist'))||{} }catch{ return{} } }
+function setCfg(c){ localStorage.setItem('fin_cfg_gist', JSON.stringify(c)) }
 
 // ═══════════════════════════════════════════════
-// GITHUB API
+// GITHUB GIST API
 // ═══════════════════════════════════════════════
-const GH_FILE = 'financas.json';
+const GIST_FILENAME = 'financas.json';
 
 function ghHeaders(){
   const {token} = getCfg();
-  return { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' };
+  return {
+    'Authorization': `Bearer ${token}`,
+    'Content-Type': 'application/json',
+    'Accept': 'application/vnd.github+json',
+    'X-GitHub-Api-Version': '2022-11-28'
+  };
 }
 
-function ghUrl(path=''){
-  const {user, repo} = getCfg();
-  return `https://api.github.com/repos/${user}/${repo}/contents/${GH_FILE}${path}`;
-}
-
-async function ghLoad(){
+async function gistLoad(){
   setSyncState('saving','Carregando…');
+  const {gistId} = getCfg();
   try{
-    const r = await fetch(ghUrl(), { headers: ghHeaders() });
-    if(r.status===404){
-      // arquivo ainda não existe — começar do zero
-      ghFileSha = null;
-      appData = {_lancamentos:[],_dividas:[],_pagamentos:{}};
-      setSyncState('ok','Novo arquivo');
-      return true;
+    if(!gistId){
+      // Primeiro uso: criar gist
+      const ok = await gistCreate();
+      return ok;
     }
+    const r = await fetch(`https://api.github.com/gists/${gistId}`, { headers: ghHeaders() });
     if(!r.ok){ const e=await r.json(); throw new Error(e.message||r.status); }
     const json = await r.json();
-    ghFileSha = json.sha;
-    const content = atob(json.content.replace(/\n/g,''));
-    appData = JSON.parse(content);
-    if(!appData._lancamentos) appData._lancamentos=[];
-    if(!appData._dividas) appData._dividas=[];
-    if(!appData._pagamentos) appData._pagamentos={};
+    const raw = json.files[GIST_FILENAME]?.content;
+    if(raw){
+      appData = JSON.parse(raw);
+      if(!appData._lancamentos) appData._lancamentos=[];
+      if(!appData._dividas) appData._dividas=[];
+      if(!appData._pagamentos) appData._pagamentos={};
+    } else {
+      appData = {_lancamentos:[],_dividas:[],_pagamentos:{}};
+    }
     setSyncState('ok','Sincronizado');
     return true;
   } catch(e){
@@ -546,15 +538,41 @@ async function ghLoad(){
   }
 }
 
-async function ghSave(msg='Atualizar dados'){
-  setSyncState('saving','Salvando…');
+async function gistCreate(){
+  setSyncState('saving','Criando Gist…');
   try{
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(appData, null, 2))));
-    const body = { message: msg, content, ...(ghFileSha ? {sha: ghFileSha} : {}) };
-    const r = await fetch(ghUrl(), { method:'PUT', headers: ghHeaders(), body: JSON.stringify(body) });
+    const body = {
+      description: 'Finanças Pessoais — dados privados',
+      public: false,
+      files: { [GIST_FILENAME]: { content: JSON.stringify({_lancamentos:[],_dividas:[],_pagamentos:{}}, null, 2) } }
+    };
+    const r = await fetch('https://api.github.com/gists', { method:'POST', headers: ghHeaders(), body: JSON.stringify(body) });
     if(!r.ok){ const e=await r.json(); throw new Error(e.message||r.status); }
     const json = await r.json();
-    ghFileSha = json.content.sha;
+    const cfg = getCfg();
+    cfg.gistId = json.id;
+    setCfg(cfg);
+    appData = {_lancamentos:[],_dividas:[],_pagamentos:{}};
+    setSyncState('ok','Gist criado ✓');
+    toast('🔒 Gist Secreto criado! ID: '+json.id);
+    return true;
+  } catch(e){
+    setSyncState('err','Erro ao criar Gist: '+e.message);
+    return false;
+  }
+}
+
+async function gistSave(msg='Atualizar dados'){
+  setSyncState('saving','Salvando…');
+  const {gistId} = getCfg();
+  if(!gistId){ toast('Gist não configurado.', true); return false; }
+  try{
+    const body = {
+      description: 'Finanças Pessoais — ' + new Date().toLocaleDateString('pt-BR'),
+      files: { [GIST_FILENAME]: { content: JSON.stringify(appData, null, 2) } }
+    };
+    const r = await fetch(`https://api.github.com/gists/${gistId}`, { method:'PATCH', headers: ghHeaders(), body: JSON.stringify(body) });
+    if(!r.ok){ const e=await r.json(); throw new Error(e.message||r.status); }
     setSyncState('ok', 'Salvo · '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}));
     return true;
   } catch(e){
@@ -576,17 +594,17 @@ function setSyncState(state, text){
 // SETUP / CONFIG
 // ═══════════════════════════════════════════════
 async function salvarConfig(){
-  const user = document.getElementById('cfg-user').value.trim();
-  const repo = document.getElementById('cfg-repo').value.trim();
   const token = document.getElementById('cfg-token').value.trim();
+  const gistId = document.getElementById('cfg-gist').value.trim();
   const errEl = document.getElementById('cfg-error');
   errEl.style.display='none';
-  if(!user||!repo||!token){ errEl.textContent='Preencha todos os campos.'; errEl.style.display='block'; return; }
-  setCfg({user,repo,token});
-  // testar conexão
-  const ok = await ghLoad();
+  if(!token){ errEl.textContent='Informe o token.'; errEl.style.display='block'; return; }
+  const cfg = { token };
+  if(gistId) cfg.gistId = gistId;
+  setCfg(cfg);
+  const ok = await gistLoad();
   if(!ok){
-    errEl.textContent='Não foi possível conectar. Verifique usuário, repositório e token.';
+    errEl.textContent='Não foi possível conectar. Verifique o token e tente novamente.';
     errEl.style.display='block';
     return;
   }
@@ -596,31 +614,30 @@ async function salvarConfig(){
 }
 
 async function salvarConfigEdit(){
-  const user = document.getElementById('edit-user').value.trim();
-  const repo = document.getElementById('edit-repo').value.trim();
   const token = document.getElementById('edit-token').value.trim();
+  const gistId = document.getElementById('edit-gist').value.trim();
   const errEl = document.getElementById('edit-error');
   errEl.style.display='none';
   const cur = getCfg();
-  setCfg({ user: user||cur.user, repo: repo||cur.repo, token: token||cur.token });
-  const ok = await ghLoad();
-  if(!ok){ errEl.textContent='Erro ao conectar com as novas credenciais.'; errEl.style.display='block'; setCfg(cur); return; }
+  const newCfg = { token: token||cur.token, gistId: gistId||cur.gistId };
+  setCfg(newCfg);
+  const ok = await gistLoad();
+  if(!ok){ errEl.textContent='Erro ao conectar.'; errEl.style.display='block'; setCfg(cur); return; }
   document.getElementById('modal-config').classList.add('hidden');
   initApp(); toast('Configurações salvas ✓');
 }
 
 function abrirConfig(){
-  const {user,repo} = getCfg();
-  document.getElementById('edit-user').value = user||'';
-  document.getElementById('edit-repo').value = repo||'';
+  const {gistId} = getCfg();
   document.getElementById('edit-token').value = '';
+  document.getElementById('edit-gist').value = gistId||'';
   document.getElementById('edit-error').style.display='none';
   document.getElementById('modal-config').classList.remove('hidden');
 }
 
 function limparConfig(){
-  if(!confirm('Desconectar este dispositivo? Os dados no GitHub não serão apagados.')) return;
-  localStorage.removeItem('fin_cfg');
+  if(!confirm('Desconectar este dispositivo? Os dados no Gist não serão apagados.')) return;
+  localStorage.removeItem('fin_cfg_gist');
   location.reload();
 }
 
@@ -629,18 +646,16 @@ function limparConfig(){
 // ═══════════════════════════════════════════════
 async function boot(){
   const cfg = getCfg();
-  if(!cfg.token||!cfg.user||!cfg.repo){
+  if(!cfg.token){
     document.getElementById('loadingScreen').classList.add('hidden');
     document.getElementById('setupScreen').classList.remove('hidden');
     return;
   }
-  const ok = await ghLoad();
+  const ok = await gistLoad();
   document.getElementById('loadingScreen').classList.add('hidden');
   if(!ok){
     document.getElementById('setupScreen').classList.remove('hidden');
-    document.getElementById('cfg-user').value = cfg.user||'';
-    document.getElementById('cfg-repo').value = cfg.repo||'';
-    document.getElementById('cfg-error').textContent = 'Não foi possível conectar ao GitHub. Verifique as credenciais.';
+    document.getElementById('cfg-error').textContent = 'Não foi possível conectar ao GitHub. Verifique o token.';
     document.getElementById('cfg-error').style.display='block';
     return;
   }
@@ -649,8 +664,8 @@ async function boot(){
 }
 
 function initApp(){
-  const {user,repo} = getCfg();
-  document.getElementById('repoLabel').textContent = `${user}/${repo} · financas.json`;
+  const {gistId} = getCfg();
+  document.getElementById('repoLabel').innerHTML = `🔒 Gist Secreto <span style="font-family:monospace;font-size:12px;color:var(--accent2)">${gistId||'—'}</span>`;
   populateYears();
   renderOverview();
 }
@@ -661,13 +676,13 @@ function initApp(){
 function getLancamentos(){ return appData._lancamentos||[] }
 function getDividas(){ return appData._dividas||[] }
 function getPagamentos(){ return appData._pagamentos||{} }
-
 function monthKey(y,m){ return `${y}_${m}` }
 
 function getYears(){
   const years=new Set([new Date().getFullYear()]);
   getLancamentos().forEach(l => l.meses.forEach(mk => years.add(parseInt(mk.split('_')[0]))));
   getDividas().forEach(d => (d.parcelas||[]).forEach(p => years.add(p.ano)));
+  if(appData._anos) appData._anos.forEach(y=>years.add(y));
   return [...years].sort((a,b)=>b-a);
 }
 
@@ -743,18 +758,10 @@ function renderOverview(){
 function addYear(){
   const y=parseInt(prompt('Ano:',new Date().getFullYear()+1));
   if(!y||isNaN(y)) return;
-  if(!getYears().includes(y)){
-    // Adiciona um lançamento vazio? Não. Só popula o select.
-    // O ano aparecerá quando houver lançamentos nele.
-    // Forçar: colocar ano no appData temporariamente
-    if(!appData._anos) appData._anos=[];
-    if(!appData._anos.includes(y)) appData._anos.push(y);
-  }
+  if(!appData._anos) appData._anos=[];
+  if(!appData._anos.includes(y)) appData._anos.push(y);
   populateYears(); document.getElementById('yearSelect').value=y; renderOverview();
 }
-
-// Ajuste para getYears incluir _anos
-const _origGetYears = getYears;
 
 // ═══════════════════════════════════════════════
 // DETAIL
@@ -786,7 +793,6 @@ function renderSummary(){
 }
 
 function renderEntradas(){
-  const mk=monthKey(currentYear,currentMonth);
   const lancs=lancamentosDoMes(currentYear,currentMonth).filter(l=>l.tipo==='entrada');
   const el=document.getElementById('listaEntradas');
   if(!lancs.length){ el.innerHTML='<div class="empty-state">Nenhuma entrada neste mês.<br><small>Vá em <b>Lançamentos</b> e selecione este mês.</small></div>'; return; }
@@ -826,7 +832,7 @@ async function togglePago(lancId){
   appData._pagamentos[`${lancId}_${mk}`]=!cur;
   renderDespesas(); renderSummary();
   toast(cur?'Marcação removida':'Despesa marcada como paga ✓');
-  await ghSave(`Pagamento ${cur?'revertido':'registrado'}: ${lancId} em ${mk}`);
+  await gistSave(`Pagamento ${cur?'revertido':'registrado'}`);
 }
 
 function renderDividasMes(){
@@ -859,7 +865,7 @@ async function toggleParcelaPago(di,pi){
   ativas[pi].pago=!ativas[pi].pago;
   renderDividasMes(); renderSummary();
   toast('Parcela atualizada');
-  await ghSave('Parcela atualizada');
+  await gistSave('Parcela atualizada');
 }
 
 function renderVisao(){
@@ -891,8 +897,7 @@ function renderVisao(){
 // LANÇAMENTOS
 // ═══════════════════════════════════════════════
 function initLancForm(hint){
-  editingLancId=null;
-  mpSelected={};
+  editingLancId=null; mpSelected={};
   document.getElementById('lanc-desc').value='';
   document.getElementById('lanc-valor').value='';
   document.getElementById('lanc-venc').value='';
@@ -964,17 +969,14 @@ async function salvarLancamento(){
   if(editingLancId){
     const idx=appData._lancamentos.findIndex(l=>l.id===editingLancId);
     if(idx>=0) appData._lancamentos[idx]={...appData._lancamentos[idx],desc,valor,cat,venc,tipo:lancTipo,meses};
-    toast('Atualizando…');
-    await ghSave(`Editar lançamento: ${desc}`);
+    await gistSave(`Editar: ${desc}`);
     toast('Lançamento atualizado ✓');
   } else {
     appData._lancamentos.push({id:`l${Date.now()}`,tipo:lancTipo,desc,valor,cat,venc,meses});
-    toast('Salvando…');
-    await ghSave(`Novo lançamento: ${desc}`);
+    await gistSave(`Novo: ${desc}`);
     toast('Lançamento salvo ✓');
   }
-  editingLancId=null;
-  mpSelected={};
+  editingLancId=null; mpSelected={};
   document.getElementById('lanc-desc').value='';
   document.getElementById('lanc-valor').value='';
   document.getElementById('lancPageTitle').textContent='Novo lançamento';
@@ -1008,7 +1010,7 @@ async function removeLanc(id){
   if(!confirm('Remover este lançamento de todos os meses?')) return;
   appData._lancamentos=getLancamentos().filter(l=>l.id!==id);
   renderLancamentosGlobal();
-  await ghSave('Remover lançamento');
+  await gistSave('Remover lançamento');
   toast('Lançamento removido');
 }
 
@@ -1073,7 +1075,7 @@ async function salvarDivida(){
     if(!ativas.length){ toast('Selecione ao menos uma parcela.'); return; }
     appData._dividas.push({id:`d${Date.now()}`,nome,total,tipo:'parcelado',parcelas:divParcelasData.map(p=>({...p}))});
   }
-  await ghSave(`Nova dívida: ${nome}`);
+  await gistSave(`Nova dívida: ${nome}`);
   ['div-nome','div-total','div-parcelas'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('div-parc-val').value='';
   document.getElementById('div-meses-preview').classList.add('hidden');
@@ -1111,7 +1113,7 @@ async function toggleDivPagoGlobal(di,pi){
   const ativas=appData._dividas[di].parcelas.filter(p=>p.ativo);
   ativas[pi].pago=!ativas[pi].pago;
   renderDividasGlobal();
-  await ghSave('Parcela atualizada');
+  await gistSave('Parcela atualizada');
   toast('Parcela atualizada');
 }
 
@@ -1119,7 +1121,7 @@ async function removeDivida(di){
   if(!confirm('Remover esta dívida?')) return;
   appData._dividas.splice(di,1);
   renderDividasGlobal();
-  await ghSave('Remover dívida');
+  await gistSave('Remover dívida');
   toast('Dívida removida');
 }
 
@@ -1136,12 +1138,8 @@ function toast(msg,err=false){
   setTimeout(()=>el.remove(),3000);
 }
 
-// fechar modal clicando fora
 document.getElementById('modal-config').addEventListener('click', e=>{ if(e.target===e.currentTarget) e.currentTarget.classList.add('hidden'); });
 
-// ═══════════════════════════════════════════════
-// BOOT
-// ═══════════════════════════════════════════════
 boot();
 </script>
 </body>
